@@ -22,10 +22,21 @@
           <span class="heart">♥</span>
         </a>
 
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary navigation">
           <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
-          <a href="work.html">Work</a>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Work <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="work.html#web-development">Web Development</a></li>
+              <li><a href="work.html#school-project">School Project</a></li>
+              <li><a href="work.html#personal-project">Personal Project</a></li>
+            </ul>
+          </div>
+
           <a href="contact.html">Contact</a>
         </nav>
 
@@ -140,5 +151,6 @@
 
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>

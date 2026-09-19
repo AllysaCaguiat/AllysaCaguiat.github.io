@@ -14,7 +14,23 @@
     <header class="main-header">
       <div class="container nav-container">
         <a class="logo" href="index.html"><span class="logo-script">Allysa.</span><span class="heart">♥</span></a>
-        <nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html" class="active">Contact</a></nav>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Work <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="work.html#web-development">Web Development</a></li>
+              <li><a href="work.html#school-project">School Project</a></li>
+              <li><a href="work.html#personal-project">Personal Project</a></li>
+            </ul>
+          </div>
+
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
         <a href="contact.html" class="connect-btn">Let's Connect ♡</a>
       </div>
     </header>
@@ -48,7 +64,8 @@
 
       <section class="container contact-note"><span>♡</span><div><h2>Thank you for visiting my portfolio.</h2><p>I’m always happy to learn, connect, and discover new opportunities.</p></div></section>
     </main>
-    <footer class="main-footer"><p>© 2024 ALLYSA SHARISE A. CAGUI-AT. All rights reserved. ♡</p></footer>
+    <footer class="main-footer"><p>© 2026 ALLYSA SHARISE A. CAGUI-AT. All rights reserved. ♡</p></footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

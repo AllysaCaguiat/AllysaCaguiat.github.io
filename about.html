@@ -14,10 +14,21 @@
     <header class="main-header">
       <div class="container nav-container">
         <a class="logo" href="index.html"><span class="logo-script">Allysa.</span><span class="heart">♥</span></a>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary navigation">
           <a href="index.html">Home</a>
           <a href="about.html" class="active">About</a>
-          <a href="work.html">Work</a>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Work <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="work.html#web-development">Web Development</a></li>
+              <li><a href="work.html#school-project">School Project</a></li>
+              <li><a href="work.html#personal-project">Personal Project</a></li>
+            </ul>
+          </div>
+
           <a href="contact.html">Contact</a>
         </nav>
         <a href="contact.html" class="connect-btn">Let's Connect ♡</a>
@@ -53,7 +64,7 @@
         </article>
       </section>
 
-      <section class="container section-space">
+      <section class="container section-space" id="skills">
         <div class="center-heading">
           <span class="page-kicker">Skills & tools</span>
           <h2>What I’m learning and using</h2>
@@ -85,5 +96,6 @@
 
     <footer class="main-footer"><p>© 2026 ALLYSA SHARISE A. CAGUI-AT. All rights reserved. ♡</p></footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
