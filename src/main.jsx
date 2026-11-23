@@ -6,6 +6,8 @@ import Work from './pages/Work';
 import Education from './pages/Education';
 import Contact from './pages/Contact';
 import './style.css';
-const routes = {'/': Home, '/index.html': Home, '/about.html': About, '/work.html': Work, '/education.html': Education, '/contact.html': Contact};
+const routes =
+{'/': Home, '/index.html': Home, '/about.html': About, '/work.html': 
+  Work, '/education.html': Education, '/contact.html': Contact};
 const Page = routes[window.location.pathname] || Home;
 createRoot(document.getElementById('root')).render(<React.StrictMode><Page /></React.StrictMode>);
